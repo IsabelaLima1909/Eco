@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoSoluções - Energia Solar</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <h1>EcoSoluções</h1>
+    <p>Energia Renovável para um futuro melhor</p>
+
+    <hr>
+
+    <!-- Sobre a empresa -->
+    <h2>Sobre a Empresa</h2>
+    <p>Somos uma empresa focada na instalação de painéis solares para casas e pequenos negócios.</p>
+
+    <!-- Serviços -->
+    <h2>Serviços</h2>
+    <ul>
+        <li>Instalação de painéis solares</li>
+        <li>Manutenção de sistemas</li>
+        <li>Consultoria energética</li>
+    </ul>
+
+    <!-- Simulador simples -->
+    <h2>Simulador de Economia</h2>
+    <p>Digite sua conta de luz:</p>
+    <input type="number" id="conta">
+    <button onclick="calcular()">Calcular</button>
+    <p id="resultado"></p>
+
+    <!-- Portfólio -->
+    <h2>Projetos</h2>
+    <p>Projeto 1 - Residência</p>
+    <p>Projeto 2 - Empresa</p>
+
+    <!-- Contato -->
+    <h2>Contato</h2>
+    <p>Email: contato@ecosolucoes.com</p>
+    <p>Telefone: (12) 99999-9999</p>
+
+    <script>
+        function calcular() {
+            var valor = document.getElementById("conta").value;
+            var economia = valor * 0.8;
+            document.getElementById("resultado").innerHTML = "Você pode economizar até R$ " + economia;
+        }
+    </script>
+
+</body>
+</html>
